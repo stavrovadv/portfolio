@@ -1,0 +1,85 @@
+.intro {
+  background-color: $beige;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &__content {
+    width: 50%;
+    position: absolute;
+    border-radius: 50px;
+    padding: 5%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+      width: 80%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -20px;
+      left: 45%;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid white;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -22px;
+      left: 45%;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid white;
+    }
+  }
+
+  &__title {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+
+  &__greeting {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 48px;
+  }
+
+  &__text {
+    text-indent: 1em;
+    margin-top: 20px;
+  }
+
+  &__social {
+    margin-top: 20px;
+  }
+
+  .btn {
+    border: 2px solid transparent;
+  }
+
+  &__arrow {
+    display: block;
+    bottom: 5%;
+    right: 5%;
+  }
+}

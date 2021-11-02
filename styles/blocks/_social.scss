@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  &__link {
+    border-radius: 50%;
+  }
+
+  &__img {
+    max-width: 100%;
+    width: 30px;
+    padding: 2px;
+  }
+}

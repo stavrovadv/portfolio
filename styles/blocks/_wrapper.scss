@@ -1,0 +1,33 @@
+.wrapper {
+  font-variant-numeric: lining-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  transition-delay: .2s;
+  display: inline-block;
+  padding: 3px;
+  background-color: transparent;
+  border: 2px solid $beigeDark;
+
+  &:hover {
+    background-color: $beigeDark;
+    border-color: $beigeDark;
+  }
+}
+
+.projects {
+  background-color: white;
+}
