@@ -1,7 +1,5 @@
 .social {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 15px;
 
   &__link {
@@ -13,4 +11,14 @@
     width: 30px;
     padding: 2px;
   }
+}
+
+.intro__social {
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__social {
+  justify-content: flex-end;
+  align-items: flex-end;
 }

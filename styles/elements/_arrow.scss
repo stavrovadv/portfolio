@@ -2,6 +2,7 @@
   min-width: 50px;
   min-height: 50px;
   position: absolute;
+  right: 5%;
   transition-delay: .2s;
   display: inline-block;
   border-radius: 50%;
@@ -15,8 +16,8 @@
   }
 
   &:hover {
-    background-color: white;
-    border-color: white;
+    background-color: $beigeDark;
+    border-color: $beigeDark;
 
     #arrow {
       fill: black;

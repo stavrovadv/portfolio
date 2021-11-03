@@ -1,7 +1,5 @@
 .intro {
   background-color: $beige;
-  max-height: 100vh;
-  height: 100%;
   overflow: hidden;
   position: relative;
 
@@ -73,13 +71,8 @@
     margin-top: 20px;
   }
 
-  .btn {
-    border: 2px solid transparent;
-  }
-
   &__arrow {
     display: block;
     bottom: 5%;
-    right: 5%;
   }
 }

@@ -7,6 +7,7 @@
 
 .section {
   min-height: 100vh;
+  height: 100%;
 }
 
 .container {
@@ -16,16 +17,21 @@
 }
 
 .btn {
+  cursor: pointer;
   transition-delay: .2s;
   display: inline-block;
   padding: 3px;
   background-color: transparent;
-  border: 2px solid $beigeDark;
+  border: 2px solid transparent;
 
   &:hover {
     background-color: $beigeDark;
     border-color: $beigeDark;
   }
+}
+
+.btn.btn-text {
+  border: 2px solid $beigeDark;
 }
 
 .projects {
