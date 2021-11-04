@@ -1,9 +1,24 @@
 .projects {
   position: relative;
   background-color: white;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   &__arrow {
     transform: rotate(180deg);
     top: 5%;
+  }
+
+  &__container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
 }

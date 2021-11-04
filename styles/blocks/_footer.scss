@@ -1,10 +1,7 @@
 .footer {
   padding: 20px;
   background-color: $beige;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  flex-shrink: 0;
 
   &__container {
     display: flex;
