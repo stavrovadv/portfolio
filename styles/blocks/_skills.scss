@@ -1,11 +1,25 @@
 .skills {
-  margin-top: 10px;
+  margin-top: rem(10px);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: rem(15px);
+
+  @include tablets {
+    font-size: rem(20px);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include phones {
+    font-size: rem(16px);
+  }
+
+  @media (max-width: 320px) {
+    display: none;
+  }
 
   &__item:not(:last-child) {
-    margin-right: 5px;
+    margin-right: rem(5px);
   }
 }

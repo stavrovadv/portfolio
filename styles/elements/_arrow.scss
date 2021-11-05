@@ -1,6 +1,6 @@
 .arrow {
-  min-width: 50px;
-  min-height: 50px;
+  min-width: rem(50px);
+  min-height: rem(50px);
   position: absolute;
   right: 5%;
   transition-delay: .2s;
@@ -9,6 +9,11 @@
   padding: 3px;
   background-color: black;
   border: 2px solid black;
+
+  @include phones {
+    min-width: 2rem;
+    min-height: 2rem;
+  }
   
   #arrow {
     transition-delay: .2s;
@@ -26,10 +31,14 @@
 
   &__img {
     max-width: 100%;
-    width: 25px;
+    width: rem(25px);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include phones {
+      width: rem(20px);
+    }
   }
 }

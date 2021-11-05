@@ -1,5 +1,5 @@
 .footer {
-  padding: 20px;
+  padding: rem(20px);
   background-color: $beige;
   flex-shrink: 0;
 
@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablets {
+      flex-direction: column;
+    }
   }
 
   &__social, &__desc {
@@ -14,7 +18,11 @@
   }
 
   &__desc {
-    font-size: 22px;
+    font-size: rem(22px);
     font-weight: bold;
+
+    @include tablets {
+      margin-bottom: rem(5px);
+    }
   }
 }

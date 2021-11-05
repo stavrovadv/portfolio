@@ -1,6 +1,6 @@
 .social {
   display: flex;
-  gap: 15px;
+  gap: rem(15px);
 
   &__link {
     border-radius: 50%;
@@ -8,8 +8,12 @@
 
   &__img {
     max-width: 100%;
-    width: 30px;
+    width: rem(30px);
     padding: 2px;
+
+    @include tablets {
+      width: rem(35px);
+    }
   }
 }
 
