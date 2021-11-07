@@ -463,6 +463,9 @@ table {
   background-color: #e6dedb;
   overflow: hidden;
   position: relative;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .intro__content {
@@ -659,6 +662,9 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .projects__arrow {
