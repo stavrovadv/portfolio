@@ -50,6 +50,17 @@
       transition: .7s;
     }
   }
+  
+  &__arrow--disabled {
+    filter: opacity(.3);
+    cursor: default; 
+
+    &:hover {
+      #arrow {
+        fill: inherit;
+      }
+    }
+  }
 
   &__arrow-img {
     position: relative;

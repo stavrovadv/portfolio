@@ -444,7 +444,7 @@ table {
   border: 2px solid transparent;
 }
 
-.btn:hover {
+.btn:hover, .btn.btn-selected {
   background-color: #ceb7af;
   border-color: #ceb7af;
 }
@@ -829,6 +829,16 @@ table {
   fill: #e6dedb;
   -webkit-transition: .7s;
   transition: .7s;
+}
+
+.slider__arrow--disabled {
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
+  cursor: default;
+}
+
+.slider__arrow--disabled:hover #arrow {
+  fill: inherit;
 }
 
 .slider__arrow-img {

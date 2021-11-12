@@ -1,14 +1,21 @@
 import {fixResizePage} from "./fixResizePage.js";
-import {pageAnimation} from "./scrollPage.js";
+import {scrollPage} from "./scrollPage.js";
+import {renderSlider, sliderInit} from "./slider.js";
+import {selectSkill} from "./skills.js";
 
 (function(){
-  window.addEventListener("load", pageAnimation);
-  window.addEventListener("hashchange", pageAnimation);
-  
+  window.addEventListener("load", scrollPage);
+  window.addEventListener("hashchange", scrollPage);
+
   let [introArrow, projectsArrow] = document.querySelectorAll(".arrow");
-  introArrow.addEventListener("click", pageAnimation);
-  projectsArrow.addEventListener("click", pageAnimation);
+  introArrow.addEventListener("click", scrollPage);
+  projectsArrow.addEventListener("click", scrollPage);
 
   window.addEventListener("resize", fixResizePage);
-  
+
+  sliderInit();
+  // renderSlider();
+
+  const skillsList = document.querySelector(".skills__list");
+  skillsList.addEventListener("click", selectSkill);
 }());

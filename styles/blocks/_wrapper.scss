@@ -24,7 +24,7 @@
   background-color: transparent;
   border: 2px solid transparent;
 
-  &:hover {
+  &:hover, &.btn-selected {
     background-color: $beigeDark;
     border-color: $beigeDark;
   }

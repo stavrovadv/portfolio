@@ -1,14 +1,16 @@
-export function pageAnimation(){
+export function scrollPage(){
   let pageHash = window.location.hash;
   let visiblePage = pageHash.substr(1);
 
-  let introBlock = document.querySelector(".intro");
-  let projectsBlock = document.querySelector(".projects");
+  const introBlock = document.querySelector(".intro");
+  const projectsBlock = document.querySelector(".projects");
 
+  let scrollToBlock;
   if(visiblePage === "projects") {
-    projectsBlock.scrollIntoView({behavior: "smooth"});
+    scrollToBlock = projectsBlock;
   }
   else {
-    introBlock.scrollIntoView({behavior: "smooth"});
+    scrollToBlock = introBlock;
   }
+  scrollToBlock.scrollIntoView({behavior: "smooth"});
 }
