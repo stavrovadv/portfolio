@@ -1,6 +1,8 @@
 .slider {
   padding-top: rem(20px);
-  height: 100%;
+  height: 70vh;
+  max-height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +10,7 @@
 
   &__content {
     height: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,6 +36,7 @@
     padding: rem(10px);
     transition: 1s;
     height: 100%;
+    align-items: center;
 
     @include tablets {
       flex-direction: column;

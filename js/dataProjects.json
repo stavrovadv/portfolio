@@ -1,19 +1,7 @@
 [
   {
     "title": "English for kids",
-    "img": "./img/projects/EFK.png",
-    "technologies": [
-        "React",
-        "React Hooks",
-        "React Router"
-      ],
-    "text": "It's my first project with React. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vel. Soluta, sapiente corporis! Aperiam, aliquid est amet tempora atque adipisci veniam hic odit libero obcaecati sapiente quidem minus tempore corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, exercitationem, possimus modi vel, quam ut facilis esse quisquam consectetur iste quas impedit? Fugit praesentium earum excepturi ipsum nostrum, animi laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, exercitationem, possimus modi vel, quam ut facilis esse quisquam consectetur iste quas impedit? Fugit praesentium earum excepturi ipsum nostrum, animi laboriosam.",
-    "deployLink": "https://rolling-scopes-school.github.io/stavrovadv-JSFE2021Q1/english-for-kids/",
-    "codeLink": "#"
-  },
-  {
-    "title": "English for kids",
-    "img": "./img/projects/EFK.png",
+    "img": "./img/projects/EFK.jpg",
     "technologies": [
         "React",
         "React Hooks",
@@ -25,16 +13,71 @@
     "codeLink": "#"
   },
   {
-    "title": "English for kids",
-    "img": "./img/projects/EFK.png",
+    "title": "Async-race",
+    "img": "./img/projects/EFK.jpg",
     "technologies": [
-        "React",
-        "React Hooks",
-        "React Router",
         "TypeScript"
       ],
-    "text": "It's my first project with React.",
-    "deployLink": "https://rolling-scopes-school.github.io/stavrovadv-JSFE2021Q1/english-for-kids/",
+    "text": "Work with webpack and REST API",
+    "deployLink": "#",
+    "codeLink": "#"
+  },
+  {
+    "title": "online-zoo",
+    "img": "./img/projects/zoo.jpg",
+    "technologies": [
+        "HTML5",
+        "CSS",
+        "Adaptive, cross-browser layout",
+        "JavaScript"
+      ],
+    "text": "Adaptive site with a few pages about Zoo's animals. There are map with animal location and pages with animals description",
+    "deployLink": "#",
+    "codeLink": "#"
+  },
+  {
+    "title": "Burger",
+    "img": "./img/projects/burger.jpg",
+    "technologies": [
+        "HTML5",
+        "SCSS",
+        "Adaptive, cross-browser layout",
+        "JavaScript"
+      ],
+    "text": "Landing page for burger restaurant. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vel. Soluta, sapiente corporis! Aperiam, aliquid est amet tempora atque adipisci veniam hic odit libero obcaecati sapiente quidem minus tempore corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, exercitationem, possimus modi vel, quam ut facilis esse quisquam consectetur iste quas impedit? Fugit praesentium earum excepturi ipsum nostrum, animi laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, exercitationem, possimus modi vel, quam ut facilis esse quisquam consectetur iste quas impedit? Fugit praesentium earum excepturi ipsum nostrum, animi laboriosam.",
+    "deployLink": "#",
+    "codeLink": "#"
+  },
+  {
+    "title": "Photo-filter",
+    "img": "./img/projects/photofilter.jpg",
+    "technologies": [
+        "Canvas",
+        "JavaScript"
+      ],
+    "text": "Yoг can upload photo, edit with switches, and download the edited image. Also in the project there are several photos that you can view, edit and download. Loading the collection depends on the time of day.",
+    "deployLink": "#",
+    "codeLink": "#"
+  },
+  {
+    "title": "Virtual Piano",
+    "img": "./img/projects/virtualpiano.jpg",
+    "technologies": [
+        "JavaScript"
+      ],
+    "text": "You can play on mini piano on your keyboard or mouse click",
+    "deployLink": "#",
+    "codeLink": "#"
+  },
+  {
+    "title": "Coworking",
+    "img": "./img/projects/coworking.jpg",
+    "technologies": [
+      "HTML5",
+      "CSS"
+      ],
+    "text": "One of the first projects",
+    "deployLink": "#",
     "codeLink": "#"
   }
 ]

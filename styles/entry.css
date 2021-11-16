@@ -748,7 +748,9 @@ table {
 
 .slider {
   padding-top: 1.25rem;
-  height: 100%;
+  height: 70vh;
+  max-height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,6 +768,7 @@ table {
 
 .slider__content {
   height: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,6 +809,9 @@ table {
   -webkit-transition: 1s;
   transition: 1s;
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
