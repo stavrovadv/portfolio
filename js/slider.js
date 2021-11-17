@@ -11,7 +11,34 @@ export function sliderInit() {
   btnPrev.addEventListener("click", (e) => showPrevOrNextItem(e, "prev"));
   btnNext.addEventListener("click", (e) => showPrevOrNextItem(e, "next"));
 
+  document.addEventListener('mousedown', (e) => startTouch(e));
+  document.addEventListener('mouseup', (e) => endTouch(e));
+
+  document.addEventListener('touchstart', (e) => startTouch(e));
+  document.addEventListener('touchend', (e) => endTouch(e));
+
   renderSlider();
+}
+
+let x1, x2;
+
+function startTouch(e) {
+  if(!(e.touches || e.clientX)) return;
+  x1 = (e.touches) ? e.touches[0].clientX : e.clientX;
+}
+
+function endTouch(e) {
+  if(!(e.changedTouches || e.clientX)) return;
+  x2 = (e.changedTouches) ? e.changedTouches[0].clientX : e.clientX;
+  if(x1 && x2) {
+    if(x2 > x1) {
+      btnPrev.click();
+    }
+    else if(x2 < x1) {
+      btnNext.click();
+    }
+  }
+  x1 = null, x2 = null;
 }
 
 export function renderSlider(selectedTechnology = undefined) {
@@ -82,7 +109,6 @@ function setCounterBlock(activeItemInd, sliderCounter, itemsCount) {
 }
 
 function disableArrow(activeItemInd, btnNext, btnPrev, lastItemInd) {
-  console.log(activeItemInd);
   btnNext.classList.remove("slider__arrow--disabled");
   btnPrev.classList.remove("slider__arrow--disabled");
 
