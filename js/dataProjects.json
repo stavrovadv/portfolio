@@ -8,19 +8,9 @@
         "React Router",
         "TypeScript"
       ],
-    "text": "It's my first project with React.",
+    "text": "Build Create React App. React Application for learning English words. Home page with categories of words. The app has two modes: training and play. In training mode, you can read a word in English, listen to the pronunciation of the word, find the translation on the back of the card. In the game mode, words are played in random order and you need to find a meaning card.",
     "deployLink": "https://rolling-scopes-school.github.io/stavrovadv-JSFE2021Q1/english-for-kids/",
-    "codeLink": "#"
-  },
-  {
-    "title": "Async-race",
-    "img": "./img/projects/EFK.jpg",
-    "technologies": [
-        "TypeScript"
-      ],
-    "text": "Work with webpack and REST API",
-    "deployLink": "#",
-    "codeLink": "#"
+    "codeLink": "https://github.com/stavrovadv/english-for-kids"
   },
   {
     "title": "online-zoo",
@@ -31,22 +21,9 @@
         "Adaptive, cross-browser layout",
         "JavaScript"
       ],
-    "text": "Adaptive site with a few pages about Zoo's animals. There are map with animal location and pages with animals description",
-    "deployLink": "#",
-    "codeLink": "#"
-  },
-  {
-    "title": "Burger",
-    "img": "./img/projects/burger.jpg",
-    "technologies": [
-        "HTML5",
-        "SCSS",
-        "Adaptive, cross-browser layout",
-        "JavaScript"
-      ],
-    "text": "Landing page for burger restaurant. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vel. Soluta, sapiente corporis! Aperiam, aliquid est amet tempora atque adipisci veniam hic odit libero obcaecati sapiente quidem minus tempore corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, exercitationem, possimus modi vel, quam ut facilis esse quisquam consectetur iste quas impedit? Fugit praesentium earum excepturi ipsum nostrum, animi laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, exercitationem, possimus modi vel, quam ut facilis esse quisquam consectetur iste quas impedit? Fugit praesentium earum excepturi ipsum nostrum, animi laboriosam.",
-    "deployLink": "#",
-    "codeLink": "#"
+    "text": "Responsive multi-page site about zoo animals with light and dark themes. Home page, animal pages and map with animal markers.",
+    "deployLink": "https://stavrovadv.github.io/zoo/pages/landing/",
+    "codeLink": "https://github.com/stavrovadv/zoo"
   },
   {
     "title": "Photo-filter",
@@ -55,9 +32,9 @@
         "Canvas",
         "JavaScript"
       ],
-    "text": "Yoг can upload photo, edit with switches, and download the edited image. Also in the project there are several photos that you can view, edit and download. Loading the collection depends on the time of day.",
-    "deployLink": "#",
-    "codeLink": "#"
+    "text": "It was one of the first js projects. The html and css files were given. Using Canvas, it was necessary to implement: \n1) Displaying a collection of photos according to the time of day\n2) Ability to upload your own images\n3) Applying filters, which are adjustable on the left panel, to a photo (the state of the filters is intentionally saved when changing a photo)\n4) Ability to download an image with filters applied\n5) A button that allows you to reset all filters to their original state",
+    "deployLink": "https://stavrovadv.github.io/photo-filter/",
+    "codeLink": "https://github.com/stavrovadv/photo-filter"
   },
   {
     "title": "Virtual Piano",
@@ -65,18 +42,17 @@
     "technologies": [
         "JavaScript"
       ],
-    "text": "You can play on mini piano on your keyboard or mouse click",
-    "deployLink": "#",
-    "codeLink": "#"
+    "text": "It was also one of the first js projects. The html and css files were given. I needed to implement piano playing using date attributes. Sounds are played when you click on the keys and press the keyboard keys corresponding to the letters. Locked repeated sound when stopped on a key. Playback in Cyrillic is blocked.",
+    "deployLink": "https://stavrovadv.github.io/piano/",
+    "codeLink": "https://github.com/stavrovadv/piano"
   },
   {
-    "title": "Coworking",
-    "img": "./img/projects/coworking.jpg",
+    "title": "Async-race",
+    "img": "./img/projects/async-race.jpg",
     "technologies": [
-      "HTML5",
-      "CSS"
+        "TypeScript"
       ],
-    "text": "One of the first projects",
+    "text": "SPA application. Build a webpack. Asynchronous typescript, work with rest api",
     "deployLink": "#",
     "codeLink": "#"
   }

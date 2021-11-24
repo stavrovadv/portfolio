@@ -1,6 +1,6 @@
 import {fixResizePage} from "./fixResizePage.js";
 import {scrollPage} from "./scrollPage.js";
-import {renderSlider, sliderInit} from "./slider.js";
+import {sliderInit} from "./slider.js";
 import {selectSkill} from "./skills.js";
 
 (function(){
@@ -14,7 +14,6 @@ import {selectSkill} from "./skills.js";
   window.addEventListener("resize", fixResizePage);
 
   sliderInit();
-  // renderSlider();
 
   const skillsList = document.querySelector(".skills__list");
   skillsList.addEventListener("click", selectSkill);

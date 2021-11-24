@@ -1,6 +1,7 @@
 .slider {
   padding-top: rem(20px);
-  height: 70vh;
+  // height: 70vh;
+  height: 64vh;
   max-height: 100%;
   width: 100%;
   display: flex;
@@ -20,6 +21,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @include tablets {
+      overflow: hidden;
+    }
 
     @include phones {
       justify-content: center;
@@ -101,22 +106,51 @@
     }
   }
 
+  &__desc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+
+    @include tablets {
+      justify-content: flex-start;
+    }
+  }
+
   &__img {
     margin-right: rem(10px);
-    pointer-events: none; // чтобы они не перетаскивались мышью
 
     @include tablets {
       margin-right: 0;
+    }
+
+    & img:hover {
+      margin: 0;
+      padding: 0;
+      border: 2px solid $beigeDark;
+      border-radius: 7px;
+      transition: .3s;
+      transform: scale(1.3);
+      z-index: 1;
+    }
+
+    @include tablets {
+      & img:hover {
+        transform: scale(1);
+        border: none;
+        border-radius: 0;
+        transition: 0;
+      }
     }
   }
 
   &__text {
     padding-left: 2px;
-    overflow: auto;
-    height: 30vh;
+    font-size: rem(14px);
 
     @include tablets {
-      height: 10vh;
+      padding-left: 0;
     }
   }
 
@@ -125,7 +159,7 @@
   }
 
   &__tech {
-    margin-top: rem(30px);
+    margin-top: rem(15px);
     font-weight: 600;
 
     @include tablets {
@@ -134,7 +168,7 @@
   }
 
   &__links {
-    margin-top: rem(30px);
+    margin-top: rem(15px);
     color: $beigeDark;
 
     @include tablets {

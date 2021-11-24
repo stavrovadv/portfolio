@@ -89,8 +89,8 @@ function createItem(dataItem){
     <div class="slider__tech">${dataItem.technologies.join(", ")}</div>
     <p class="slider__text">${dataItem.text}</p>
     <div class="slider__links">
-      <a href="${dataItem.deployLink || "#"}" class="slider__link slider__deploy">To deploy</a>
-      <a href="${dataItem.codeLink || "#"}" class="slider__link slider__code">To code</a>
+      <a href="${dataItem.deployLink || "#"}" target="_blank" class="slider__link slider__deploy">To deploy</a>
+      <a href="${dataItem.codeLink || "#"}" target="_blank" class="slider__link slider__code">To code</a>
     </div>
   `;
   item.append(descBlock);
