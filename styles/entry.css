@@ -369,8 +369,14 @@ html, body {
 }
 
 body {
+  min-height: 100vh;
   overflow: hidden;
-  height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow: auto;
+  }
 }
 
 ul,
@@ -615,8 +621,7 @@ table {
 
 @media screen and (max-width: 480px) {
   .arrow {
-    min-width: 2rem;
-    min-height: 2rem;
+    display: none;
   }
 }
 

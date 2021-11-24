@@ -11,8 +11,9 @@
   border: 2px solid black;
 
   @include phones {
-    min-width: 2rem;
-    min-height: 2rem;
+    display: none;
+    // min-width: 2rem;
+    // min-height: 2rem;
   }
   
   #arrow {
