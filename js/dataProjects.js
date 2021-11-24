@@ -1,4 +1,4 @@
-[
+let data = [
   {
     "title": "English for kids",
     "img": "./img/projects/EFK.jpg",
@@ -56,4 +56,6 @@
     "deployLink": "#",
     "codeLink": "#"
   }
-]
+];
+
+export default data;

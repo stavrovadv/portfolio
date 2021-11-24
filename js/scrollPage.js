@@ -1,4 +1,5 @@
-export function scrollPage(){
+export function scrollPage(e){
+  e.preventDefault;
   if(window.innerWidth <= 480) return;
   let pageHash = window.location.hash;
   let visiblePage = pageHash.substr(1);

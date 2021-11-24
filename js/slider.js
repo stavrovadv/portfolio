@@ -1,4 +1,4 @@
-import data from "./dataProjects.json" assert { type: "json" };
+import data from "./dataProjects.js";
 
 const list = document.querySelector(".slider__list");
 let itemsEl = createOrUpdateSliderList(list);
@@ -38,7 +38,8 @@ function endTouch(e) {
       btnNext.click();
     }
   }
-  x1 = null, x2 = null;
+  x1 = null;
+  x2 = null;
 }
 
 export function renderSlider(selectedTechnology = undefined) {

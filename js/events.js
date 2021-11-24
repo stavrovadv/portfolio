@@ -4,12 +4,20 @@ import {sliderInit} from "./slider.js";
 import {selectSkill} from "./skills.js";
 
 (function(){
-  window.addEventListener("load", scrollPage);
-  window.addEventListener("hashchange", scrollPage);
-
   let [introArrow, projectsArrow] = document.querySelectorAll(".arrow");
-  introArrow.addEventListener("click", scrollPage);
-  projectsArrow.addEventListener("click", scrollPage);
+  let [intro, projects] = document.querySelectorAll(".section");
+
+  let userAgent = navigator.userAgent;
+  if(userAgent.match(/chrome|chromium|crios/i) || userAgent.match(/edg/i)){
+    introArrow.addEventListener("click", scrollPage);
+    projectsArrow.addEventListener("click", scrollPage);
+    window.addEventListener("load", scrollPage);
+    window.addEventListener("hashchange", scrollPage);
+  }
+  else {
+    intro.setAttribute("id", "intro");
+    projects.setAttribute("id", "projects");
+  }
 
   window.addEventListener("resize", fixResizePage);
 
